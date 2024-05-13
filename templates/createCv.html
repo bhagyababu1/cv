@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1> Create CV</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <label for=""> Name : </label>
+    <input type="text" name="name" placeholder="enter your name">
+    <br/>
+    <br/>
+    <label for=""> Age : </label>
+    <input type="number" name="age" placeholder="enter your age">
+    <br/>
+    <br/>
+    <label for=""> Place : </label>
+    <input type="text" name="place" placeholder="enter your Place">
+    <br/>
+    <br/>
+    <label for=""> Mobile No : </label>
+    <input type="number" name="mob_no" placeholder="enter your mobile no">
+    <br/>
+    <br/>
+    <label for=""> Email : </label>
+    <input type="email" name="email" placeholder="enter your email id">
+    <br/>
+    <br/>
+    <label for=""> Skills : </label>
+    <input type="text" name="skills" placeholder="enter your skills">
+    <br/>
+    <br/>
+    <label for=""> Full name : </label>
+    <input type="text" name="full_name" placeholder="enter your full_name">
+    <br/>
+    <br/>
+    <label for=""> Date of birth : </label>
+    <input type="date" name="date_of_birth" placeholder="enter your date_of_birth">
+    <br/>
+    <br/>
+    <label for=""> Sex : </label>
+    <input type="text" name="sex" placeholder="enter your sex">
+    <br/>
+    <br/>
+    <label for=""> Nationality : </label>
+    <input type="text" name="nationality" placeholder="enter your nationality">
+    <br/>
+    <br/>
+    <label for=""> School_attended : </label>
+    <input type="text" name="school_attended" placeholder="enter your school_attended">
+    <br/>
+    <br/>
+    <label for=""> Academic_qualifications : </label>
+    <input type="text" name="academic_qualifications" placeholder="enter your academic_qualifications">
+    <br/>
+    <br/>
+    <input type="submit" value="save">
+</form>
+
+</body>
+</html>

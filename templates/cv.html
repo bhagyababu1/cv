@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<div class="card" style="padding:1rem">
+   <span class="border border-secondary" style="padding:1rem">
+        <h3 align="center"> CV </h3>
+   {% for cv in cv %}
+       <div class="card-center" align="center" style="padding:1rem;">
+        {{cv.name}}
+        <br/>
+        {{cv.age}}years
+        <br/>
+        {{cv.place}}
+        <br/>
+        mob no-{{cv.mob_no}}
+        <br/>
+        {{cv.email}}
+       </div>
+        <br/>
+        <div class="card" style="padding:1rem;">
+          <h5> Skills</h5>
+
+          {{cv.skills}}
+        </div>
+        <br/>
+        <div class="card" style="padding:1rem">
+          <h5>  Personal details </h5>
+
+         <ul>
+          <li>Full name : {{cv.full_name}}</li>
+          <li>Date_of_birth : {{cv.date_of_birth}}</li>
+          <li>Sex : {{cv.sex}}</li>
+          <li>Nationality : {{cv.nationality}}</li>
+          <li>School_attended : {{cv.school_attended}}</li>
+         </ul>
+        </div>
+      <br/>
+      <div class="card" style="padding:1rem">
+          <h5> Academic_qualifications </h5>
+          {{cv.academic_qualifications}}
+      </div>
+       <br/>
+
+   {% endfor%}
+   </span>
+</div>
+
+{% endblock %}
