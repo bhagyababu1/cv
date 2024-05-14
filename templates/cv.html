@@ -19,13 +19,11 @@
         <br/>
         <div class="card" style="padding:1rem;">
           <h5> Skills</h5>
-
-          {{cv.skills}}
+            {{cv.skills}}
         </div>
         <br/>
         <div class="card" style="padding:1rem">
           <h5>  Personal details </h5>
-
          <ul>
           <li>Full name : {{cv.full_name}}</li>
           <li>Date_of_birth : {{cv.date_of_birth}}</li>
@@ -39,9 +37,22 @@
           <h5> Academic_qualifications </h5>
           {{cv.academic_qualifications}}
       </div>
-       <br/>
+      <br/>
+      <div class="card" style="padding:1rem;">
+          <h5> Certifications </h5>
 
-   {% endfor%}
+          {{cv.certifications}}
+      </div>
+      <br/>
+      <div class="card" style="padding:1rem;">
+          <h5> Work History </h5>
+
+          {{cv.work_history}}
+      </div>
+      <br/>
+
+
+   {% endfor %}
    </span>
 </div>
 
